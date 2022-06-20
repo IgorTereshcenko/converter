@@ -1,0 +1,47 @@
+.curses {
+    &__wrapper {
+        margin-top: 27px;
+        margin-left: 20px;
+        width: 381px;
+        height: 137px;
+        background: #FFF1D5;
+        border-radius: 10px;
+        box-shadow: -7.78321px -7.78321px 31.1329px rgba(255, 255, 255, 0.30), 7.78321px 7.78321px 31.1329px -3.11329px rgba(112, 96, 3, 0.78);
+    }
+    &__usd, &__eur {
+        width: 155px;
+        height: 49px;
+        background: #f7eede;
+        border-radius: 10px;
+        text-align: center;
+        padding: 5px 5px;
+        box-shadow: -7.78321px -7.78321px 31.1329px rgba(255, 255, 255, 0.50), 7.78321px 7.78321px 31.1329px -3.11329px rgba(112, 96, 3, 0.45);
+        color: #CC800E;
+        font-weight: 700;
+    }
+    &__title {
+        text-align: center;
+        color: #CC800E;
+        font-style: italic;
+    }
+    &__currency {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+    }
+}
+
+@media (max-width: 576px) {
+    .curses {
+        &__wrapper {
+            width: 266px;
+            height: 114px;
+        }
+        &__usd, &__eur {
+            width: 96px;
+            height: 42px;
+            font-size: 14px;
+            padding-top: 2px;
+        }
+    }
+}

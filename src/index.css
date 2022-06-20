@@ -1,0 +1,11 @@
+body {
+  font-family: 'Mukta', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #FEDD9E;
+}
+
+* .container {
+  max-width: 802px;
+  margin: 0 auto;
+}
