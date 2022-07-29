@@ -28,11 +28,11 @@ const Converter = () => {
         onUpdateConverting()
     },[])
 
-    const onUpdateConverting = (curses = 0) => {
+    const onUpdateConverting = (curses = 1) => {
         getConvert()
             .then(onCurses)
-                let res = curses / value;
-                setRes(Math.round(res));
+                let res = value / curses;
+                setRes(res.toFixed(2));
     }
 
     return (
