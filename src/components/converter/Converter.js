@@ -31,7 +31,7 @@ const Converter = () => {
     const onUpdateConverting = (curses = 0) => {
         getConvert()
             .then(onCurses)
-                let res = curses * value;
+                let res = curses / value;
                 setRes(Math.round(res));
     }
 
